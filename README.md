@@ -2,7 +2,8 @@
 
 **AI Career Coach** is a smart web application that empowers job seekers to build a standout resume, generate personalized cover letters, and prepare for interviews — all in one place. It also provides interactive visual feedback on your preparation performance using charts and analytics.
 
-Live Demo 👉 [https://your-vercel-deployment-url.vercel.app](https://careerly-ai-samurai1.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=vercel)](https://careerly-ai-samurai1.vercel.app/)
+
 
 ---
 
@@ -95,6 +96,11 @@ This project is deployed on **Vercel** with automatic builds on push.
 
 - **GeminiAi** for generating resumes and cover letters  
 - **Prompt engineering** for dynamic interview questions and feedback
+
+---
+
+[![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/Braj-01/ai-career-coach/pulls)
 
 ---
 
