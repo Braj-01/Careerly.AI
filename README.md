@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🤖 AI Career Coach
 
-## Getting Started
+**AI Career Coach** is a smart web application that empowers job seekers to build a standout resume, generate personalized cover letters, and prepare for interviews — all in one place. It also provides interactive visual feedback on your preparation performance using charts and analytics.
 
-First, run the development server:
+Live Demo 👉 [https://your-vercel-deployment-url.vercel.app](https://careerly-ai-samurai1.vercel.app/)
+
+---
+
+## ✨ Features
+
+- 📝 **AI-Powered Resume Builder**  
+  Craft professional resumes with ease and download them as PDF.
+
+- 💌 **Smart Cover Letter Generator**  
+  Generate job-specific cover letters instantly using AI.
+
+- 🎯 **Interview Preparation Tool**  
+  Practice common questions and get AI feedback with performance charts.
+
+- 📊 **Visual Analytics Dashboard**  
+  View your interview prep progress and results with intuitive charts.
+
+- 🔐 **User Authentication**  
+  Secure sign-in & sign-up powered by [Clerk](https://clerk.dev/).
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech            | Description                             |
+|-----------------|-----------------------------------------|
+| [Next.js](https://nextjs.org/) | React framework for frontend & fullstack logic |
+| [Prisma ORM](https://www.prisma.io/) | Database ORM for interacting with Neon |
+| [Neon](https://neon.tech/)     | Serverless Postgres database |
+| [Inngest](https://www.inngest.com/) | Background jobs and event-driven workflows |
+| [Clerk](https://clerk.dev/)    | Authentication provider |
+| [shadcn/ui](https://ui.shadcn.com/) | Styled UI components |
+| [Vercel](https://vercel.com/)  | Hosting and deployment platform |
+
+---
+
+## 📸 Screenshots
+
+| Resume Builder | Cover Letter Generator |
+|----------------|------------------------|
+| ![Resume Builder](./public/screenshots/resume.png) | ![Cover Letter](./public/screenshots/coverletter.png) |
+
+| Interview Prep | Result Analytics |
+|----------------|------------------|
+| ![Interview](./public/screenshots/interview.png) | ![Chart](./public/screenshots/chart.png) |
+
+---
+
+## 📦 Installation & Local Setup
 
 ```bash
+git clone https://github.com/Braj-01/Careerly.AI.git
+cd Careerly.AI
+# Install dependencies
+npm install
+
+# Add your environment variables in `.env.local`
+cp .env.example .env.local
+
+# Push Prisma schema
+npx prisma db push
+
+# Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧪 Environment Variables
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Here are some of the essential environment variables you'll need:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+DATABASE_URL=your_neon_postgres_url
+CLERK_SECRET_KEY=your_clerk_secret
+CLERK_PUBLISHABLE_KEY=your_clerk_key
+INNGEST_SIGNING_KEY=your_inngest_key
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
 
-## Learn More
+## 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is deployed on **Vercel** with automatic builds on push.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Connect your GitHub repo to [Vercel](https://vercel.com/)
+2. Add the required environment variables in the Vercel dashboard
+3. Deploy 🎉
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧠 AI Tools Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **GeminiAi** for generating resumes and cover letters  
+- **Prompt engineering** for dynamic interview questions and feedback
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Braj Narayan Awasthi**  
+🔗 [LinkedIn](https://www.linkedin.com/in/braj-narayan-awasthi-33193a274)
